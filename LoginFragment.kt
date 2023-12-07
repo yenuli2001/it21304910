@@ -28,6 +28,12 @@ class LoginFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private fun Intent(loginFragment: LoginFragment, java: Class<MainActivity2>) {
+        var loginFragment : LoginFragment
+        var java : MainActivity2
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -52,6 +58,11 @@ class LoginFragment : Fragment() {
 
         return rootView
     }
+
+    private fun startActivity(intent: Unit) {
+        return intent
+    }
+
 
 
 
